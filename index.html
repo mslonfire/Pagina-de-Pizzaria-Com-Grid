@@ -389,3 +389,14 @@
           <h3>Informações</h3>
           <p><strong>Endereço:</strong> Rua das Pizzas, 123 - Centro</p>
           <p><strong>Telefone:</strong> (71) 99999-999
+
+            const form = document.getElementById("formContato");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+
+  alert("Obrigado pelo contato, " + nome + "! Sua mensagem foi enviada com sucesso.");
+  form.reset();
+});
